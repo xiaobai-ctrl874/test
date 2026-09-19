@@ -1,0 +1,17 @@
+name: Deploy Staging
+
+on:
+  push:
+    tags:
+      - 'v*-stage'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: staging
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Deploy
+        run: echo "Deploying ${{ github.ref_name }} to staging"
