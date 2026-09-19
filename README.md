@@ -10,3 +10,7 @@ This is my first GitHub practice project.
 - Learn commit
 - Learn pull request
 - Learn merge
+
+## Status
+
+Learning GitHub step by step.
